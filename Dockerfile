@@ -12,8 +12,8 @@ RUN apk add --no-cache \
     php7 php7-phar php7-json php7-iconv php7-openssl php7-fpm php7-opcache php7-zlib
 
 RUN apk add --no-cache \
-    # php7-ftp \
-    # php7-xdebug \
+    php7-ftp \
+    php7-xdebug \
     php7-mcrypt \
     php7-mbstring \
     php7-soap \
@@ -21,7 +21,7 @@ RUN apk add --no-cache \
     php7-pdo_odbc \
     php7-dom \
     php7-pdo \
-    # php7-zip \
+    php7-zip \
     php7-mysqli \
     php7-sqlite3 \
     php7-pdo_pgsql \
@@ -31,8 +31,8 @@ RUN apk add --no-cache \
     php7-pdo_mysql \
     php7-pdo_sqlite \
     php7-gettext \
-    # php7-xmlreader \
-    # php7-xmlwriter \
+    php7-xmlreader \
+    php7-xmlwriter \
     php7-tokenizer \
     php7-xmlrpc \
     php7-bz2 \
@@ -41,7 +41,7 @@ RUN apk add --no-cache \
     php7-ctype \
     php7-session \
     php7-redis \
-    # php7-exif \
+    php7-exif \
     php7-simplexml
 
 RUN apk update && apk upgrade
